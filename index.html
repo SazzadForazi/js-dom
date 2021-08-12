@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javaScript</title>
+    <link rel="shortcut icon" href="sazzad.jpg" type="image/x-icon">
+    <style>
+        .blogs {
+            width: 50%;
+            margin: 0 auto;
+            box-sizing: border-box;
+            background-color: rgba(146, 153, 145, 0.116);
+
+            border: 5px solid gray;
+            /* margin: 10px; */
+            padding: 35px;
+        }
+    </style>
+
+</head>
+
+<header>
+    <main>
+        <div class="blogs">
+            <h1>this is heading </h1>
+            <img style="height: 250px;width: 250px; " src="sazzad.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni accusamus enim incidunt quo. Itaque
+                laboriosam
+                est, obcaecati voluptas a dolorum culpa amet officiis consequuntur cum iusto doloribus explicabo hic
+                doloremque dignissimos blanditiis nemo deserunt. Dolore dignissimos ea, explicabo corrupti eius modi aut
+                eos
+                vero quisquam natus quo numquam placeat quis.</p>
+        </div>
+    </main>
+</header>
+
+<body style="background-color:aquamarine ;">
+    <header>
+        <main>
+            <ul id="list">
+                <li>list-1</li>
+                <li>list-2</li>
+                <li>list-3</li>
+                <li>list-4</li>
+                <li>list-5</li>
+            </ul>
+        </main>
+        <main>
+            <article class="blog">
+                <h3>My Awesome Blog-1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, illum placeat! Provident commodi
+                    iure illum doloribus corporis aut recusandae odio iusto id hic molestias aliquam, exercitationem
+                    harum illo odit dolor?</p>
+            </article>
+            <article class="blog">
+                <h3 id="second-title">My Awesome Blog-2</h3>
+                <p>Vero dolores asperiores expedita molestias, voluptatibus, culpa aliquam vel corporis error itaque
+                    earum voluptates nemo cum consequatur! Impedit, consequatur reprehenderit recusandae dolorem earum
+                    illum! Deserunt perspiciatis beatae harum. Nostrum, harum!</p>
+            </article>
+            <article class="blog">
+                <h3>My Awesome Blog-3</h3>
+                <p>Et ad nobis cupiditate ullam iusto! Harum eos beatae adipisci accusamus, possimus nam temporibus
+                    placeat eaque quis porro! Magni est repudiandae, corporis dolorum explicabo illum perspiciatis hic
+                    amet quasi minima?</p>
+            </article>
+        </main>
+    </header>
+
+
+
+
+    <script>
+        const blogTitle = document.getElementsByTagName('h3');
+        for (const h3 of blogTitle) {
+            // console.log(h3.innerText);
+        }
+
+        const secondTitle = document.getElementById('second-title');
+        secondTitle.style.textAlign = 'center';
+        secondTitle.style.color = "red";
+        secondTitle.style.padding = "10px";
+        secondTitle.style.background = "yellow";
+
+        const blogs = document.getElementsByClassName('blog');
+        for (const blog of blogs) {
+            blog.style.margin = "20px";
+            blog.style.border = "2px solid red"
+            blog.style.borderRadius = '10px';
+            blog.style.padding = "20px"
+        }
+
+
+
+        const li = document.createElement('li');
+        li.innerText = "list-6";
+        const ul = document.getElementById('list');
+        ul.appendChild(li);
+    </script>
+</body>
+
+</html>
